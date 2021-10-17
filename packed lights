@@ -262,7 +262,7 @@ entities:
           width: 40px;
         tap_action:
           action: call-service
-          service: light.toggle
+          service: switch.toggle
           service_data:
             entity_id: switch.ewelink_plug_2
 title: Lights
