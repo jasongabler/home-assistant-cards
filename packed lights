@@ -1,0 +1,271 @@
+type: entities
+entities:
+  - type: custom:multiple-entity-row
+    entity: light.living_room_halo_group
+    name: Living Room
+    icon: mdi:lightbulb-group
+    show_state: false
+    theme: ios-dark-mode
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: light.living_room_halo_group
+    entities:
+      - entity: light.living_room_halo_group
+        icon: mdi:lightbulb-group
+        state_color: true
+        name: All
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.living_room_halo_group
+      - entity: scene.tv_lighting
+        icon: mdi:television-classic
+        state_color: true
+        name: TV
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.tv_lighting
+      - entity: scene.ht_lighting
+        icon: mdi:projector
+        state_color: true
+        name: Theater
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.ht_lighting
+  - type: custom:multiple-entity-row
+    entity: light.upstairs_bedrooms_light_group
+    name: Upstairs Bdrs
+    icon: mdi:lightbulb-group
+    show_state: false
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: light.upstairs_bedrooms_light_group
+    entities:
+      - entity: light.guest_room
+        icon: mdi:lightbulb
+        state_color: true
+        name: Guest
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.guest_room
+      - entity: light.master_lamps
+        icon: mdi:lamp
+        state_color: true
+        name: Master
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.master_lamps
+      - entity: light.master_cans
+        icon: mdi:lightbulb
+        state_color: true
+        name: Master
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.master_cans
+  - type: custom:multiple-entity-row
+    entity: light.hallway_light_group
+    name: Hallway Lights
+    icon: mdi:lightbulb-group
+    show_state: false
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: light.hallway_light_group
+    entities:
+      - entity: light.hallway
+        icon: mdi:lightbulb
+        state_color: true
+        name: Hallway
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.hallway
+      - entity: light.landing
+        icon: mdi:lamp
+        state_color: true
+        name: Landing
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.landing
+      - entity: light.stairs
+        icon: mdi:lightbulb
+        state_color: true
+        name: Stairs
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.stairs
+  - type: custom:multiple-entity-row
+    entity: light.upstairs_light_group
+    name: Upstairs
+    icon: mdi:lightbulb-group
+    show_state: false
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: light.upstairs_light_group
+    entities:
+      - entity: light.kitchen
+        icon: mdi:lightbulb
+        state_color: true
+        name: Kitchen
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.kitchen
+      - entity: light.kitchen_counter
+        icon: mdi:lamp
+        state_color: true
+        name: Counter
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.kitchen_counter
+      - entity: light.dining_cans
+        icon: mdi:lightbulb
+        state_color: true
+        name: Dining
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.dining_cans
+  - type: custom:multiple-entity-row
+    entity: light.downstairs_light_group
+    name: Downstairs
+    show_state: false
+    icon: mdi:lightbulb-group
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: light.downstairs_light_group
+    entities:
+      - entity: switch.ewelink_plug_1
+        icon: mdi:lamp
+        state_color: true
+        name: Family
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: switch.toggle
+          service_data:
+            entity_id: switch.ewelink_plug_1
+      - entity: light.family_room
+        icon: mdi:lightbulb
+        state_color: true
+        name: Family
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.family_room
+      - entity: light.garage
+        icon: mdi:lightbulb
+        state_color: true
+        name: Garage
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.garage
+  - type: custom:multiple-entity-row
+    entity: light.kids_light_group
+    name: Kids Rooms
+    show_state: false
+    icon: mdi:lightbulb-group
+    tap_action:
+      action: call-service
+      service: light.toggle
+      service_data:
+        entity_id: light.kids_light_group
+    entities:
+      - entity: light.kid1_s_cans
+        icon: mdi:lightbulb
+        state_color: true
+        name: Kid 1
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.kid1_s_cans
+      - entity: light.kid2_s_cans
+        icon: mdi:lightbulb
+        state_color: true
+        name: Kid 2
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: light.kid2_s_cans
+      - entity: switch.ewelink_plug_2
+        icon: mdi:lamp
+        state_color: true
+        name: Kid 2
+        styles:
+          width: 40px;
+        tap_action:
+          action: call-service
+          service: light.toggle
+          service_data:
+            entity_id: switch.ewelink_plug_2
+title: Lights
+theme: ios-dark-mode
+show_header_toggle: false
+state_color: true
